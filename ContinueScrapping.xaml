@@ -1,0 +1,586 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ContinueScrapping" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="850.4,10183.2" sap2010:WorkflowViewState.IdRef="ContinueScrapping_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uasa="clr-namespace:UiPath.Activities.System.Arrays;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="44">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Activities.System.Arrays</x:String>
+      <x:String>UiPath.Activities.System.Collections</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="65">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ContinueScrapping" sap:VirtualizedContainerService.HintSize="832,10118.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="D:\Coding\ICStar Hackathon\Scrapping Yayasan\test.txt" Name="file_url" />
+      <Variable x:TypeArguments="x:String" Name="text" />
+      <Variable x:TypeArguments="x:String" Name="last_line" />
+      <Variable x:TypeArguments="x:String" Default="https://vervalyayasan.data.kemdikbud.go.id/index.php/Chome/rekapitulasi?kode_wilayah=000000" Name="url" />
+      <Variable x:TypeArguments="x:String" Name="last_provinsi" />
+      <Variable x:TypeArguments="s:String[]" Name="split_string" />
+      <Variable x:TypeArguments="x:String" Name="last_kabupaten" />
+      <Variable x:TypeArguments="x:String" Name="last_kecamatan" />
+      <Variable x:TypeArguments="x:String" Name="last_yayasan" />
+      <Variable x:TypeArguments="sd:DataTable" Name="provinsi" />
+      <Variable x:TypeArguments="scg:List(sd:DataRow)" Name="deleted_provinsi" />
+      <Variable x:TypeArguments="x:Int32" Name="counter" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadTextFile File="{x:Null}" Content="[text]" DisplayName="Read Text File" FileName="[file_url]" sap:VirtualizedContainerService.HintSize="788.8,90.4" sap2010:WorkflowViewState.IdRef="ReadTextFile_2" />
+    <Assign sap:VirtualizedContainerService.HintSize="788.8,69.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[last_line]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[File.ReadAllLines(file_url).Last()]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="788.8,69.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="s:String[]">[split_string]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="s:String[]">[last_line.Split("~|~")]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="788.8,69.6" sap2010:WorkflowViewState.IdRef="Assign_4">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[last_provinsi]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[split_string(0)]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="788.8,69.6" sap2010:WorkflowViewState.IdRef="Assign_5">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[last_kabupaten]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[split_string(1)]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="788.8,69.6" sap2010:WorkflowViewState.IdRef="Assign_6">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[last_kecamatan]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[split_string(2)]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign sap:VirtualizedContainerService.HintSize="788.8,69.6" sap2010:WorkflowViewState.IdRef="Assign_7">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[last_yayasan]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[split_string(3)]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="788.8,9239.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="234b6ac3-b0b5-42f0-8b8d-d3cb9a62db94" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="755.2,9012.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:Int32" Name="i" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[provinsi]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Wilayah Jumlah' ReferenceIdx='0' Name='nama_provinsi'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Wilayah Jumlah Url' ReferenceIdx='1' Name='url_provinsi'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Jumlah 135,339' ReferenceIdx='2' Name='Jumlah 135,339' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Wilayah Jumlah' attr='text' name2='Wilayah Jumlah Url' attr2='href' /&gt;&lt;column name='Jumlah 135,339' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="712,167.2" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" Version="V3">
+              <uix:NExtractData.NextLink>
+                <uix:TargetAnchorable BrowserURL="https://vervalyayasan.data.kemdikbud.go.id/index.php/Chome/rekapitulasi?kode_wilayah=000000" DesignTimeRectangle="1569, 843, 71, 45" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Next'" FullSelectorArgument="&lt;webctrl id='tabel_next' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='tabel_next' tag='A' type='' class='paginate_button next' aaname='Next' check:innerText='Next' /&gt;" Guid="96f432ba-e990-43f7-8a8a-31e72b68b131" ImageBase64="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" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Verval Yayasan' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NExtractData.NextLink>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="277, 384, 1365, 339" DesignTimeScaleFactor="1.25" FriendlyName="'WilayahJumlah'" FullSelectorArgument="&lt;webctrl id='tabel' tag='TABLE' /&gt;" Guid="4d18a335-6f4f-4166-99c6-d3c213297e30" InformativeScreenshot="d203d7ac04f2e7cd3610013673591079.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Verval Yayasan' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <Assign sap:VirtualizedContainerService.HintSize="712,71.2" sap2010:WorkflowViewState.IdRef="Assign_8">
+              <Assign.To>
+                <OutArgument x:TypeArguments="scg:List(sd:DataRow)">[deleted_provinsi]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="scg:List(sd:DataRow)">[new List(Of DataRow)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[provinsi]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="712,982.4" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="524.8,855.2" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="nama_provinsi" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="nama_provinsi" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="481.6,197.6" sap2010:WorkflowViewState.IdRef="GetRowItem_2" Row="[row]">
+                      <ui:GetRowItem.Value>
+                        <OutArgument x:TypeArguments="x:String">[nama_provinsi]</OutArgument>
+                      </ui:GetRowItem.Value>
+                    </ui:GetRowItem>
+                    <If Condition="[Not nama_provinsi.Equals(last_provinsi)]" sap:VirtualizedContainerService.HintSize="481.6,524.8" sap2010:WorkflowViewState.IdRef="If_4">
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="400,236" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uasa:AppendItemToList x:TypeArguments="sd:DataRow" ItemIndex="{x:Null}" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="356.8,144.8" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_2" ItemToAppend="[row]" List="[deleted_provinsi]" />
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence sap:VirtualizedContainerService.HintSize="400,123.2" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:Break sap:VirtualizedContainerService.HintSize="356.8,32" sap2010:WorkflowViewState.IdRef="Break_1" />
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+            <Assign sap:VirtualizedContainerService.HintSize="712,71.2" sap2010:WorkflowViewState.IdRef="Assign_12">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[i]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">0</InArgument>
+              </Assign.Value>
+            </Assign>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="712,98.4" sap2010:WorkflowViewState.IdRef="WriteLine_16" Text="[deleted_provinsi.Count.ToString]" />
+            <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[i&lt;deleted_provinsi.Count]" DisplayName="While" sap:VirtualizedContainerService.HintSize="712,575.2" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+              <ui:InterruptibleWhile.Body>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,398.4" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:RemoveDataRow RowIndex="{x:Null}" DataTable="[provinsi]" DisplayName="Remove Data Row" sap:VirtualizedContainerService.HintSize="356.8,197.6" sap2010:WorkflowViewState.IdRef="RemoveDataRow_1" Row="[deleted_provinsi.ElementAt(i)]" />
+                  <Assign sap:VirtualizedContainerService.HintSize="356.8,69.6" sap2010:WorkflowViewState.IdRef="Assign_13">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Int32">[i]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Int32">[i+1]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </ui:InterruptibleWhile.Body>
+            </ui:InterruptibleWhile>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[provinsi]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="712,6714.4" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="678.4,6587.2" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="nama_provinsi" />
+                      <Variable x:TypeArguments="x:String" Name="url_provinsi" />
+                      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+                      <Variable x:TypeArguments="sd:DataTable" Name="kabupaten" />
+                      <Variable x:TypeArguments="scg:List(sd:DataRow)" Name="deleted_kabupaten" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="nama_provinsi" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="635.2,197.6" sap2010:WorkflowViewState.IdRef="GetRowItem_3" Row="[row]">
+                      <ui:GetRowItem.Value>
+                        <OutArgument x:TypeArguments="x:String">[nama_provinsi]</OutArgument>
+                      </ui:GetRowItem.Value>
+                    </ui:GetRowItem>
+                    <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="url_provinsi" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="635.2,197.6" sap2010:WorkflowViewState.IdRef="GetRowItem_4" Row="[row]">
+                      <ui:GetRowItem.Value>
+                        <OutArgument x:TypeArguments="x:String">[url_provinsi]</OutArgument>
+                      </ui:GetRowItem.Value>
+                    </ui:GetRowItem>
+                    <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="635.2,92" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="[url_provinsi]" Version="V3" />
+                    <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[kabupaten]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='nama_kabupaten' ReferenceName='Wilayah Jumlah' ReferenceIdx='0'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='url_kabupaten' ReferenceName='Wilayah Jumlah Url' ReferenceIdx='1'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' IsDeleted='true' Name='Jumlah 3,581' ReferenceName='Jumlah 3,581' ReferenceIdx='2'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Wilayah Jumlah' attr='text' name2='Wilayah Jumlah Url' attr2='href' /&gt;&lt;column name='Jumlah 3,581' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="635.2,167.2" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="234b6ac3-b0b5-42f0-8b8d-d3cb9a62db94" Version="V3">
+                      <uix:NExtractData.NextLink>
+                        <uix:TargetAnchorable BrowserURL="https://vervalyayasan.data.kemdikbud.go.id/index.php/Chome/rekapitulasi?kode_wilayah=060000" DesignTimeRectangle="1569, 843, 71, 45" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Next'" FullSelectorArgument="&lt;webctrl id='tabel_next' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='tabel_next' tag='A' type='' class='paginate_button next' aaname='Next' check:innerText='Next' /&gt;" Guid="bc93e2f9-f3fb-40f7-9048-b03f796146fe" ImageBase64="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" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Verval Yayasan' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                      </uix:NExtractData.NextLink>
+                      <uix:NExtractData.Target>
+                        <uix:TargetAnchorable DesignTimeRectangle="277, 384, 1365, 814" DesignTimeScaleFactor="1.25" FriendlyName="'WilayahJumlah'" FullSelectorArgument="&lt;webctrl id='tabel' tag='TABLE' /&gt;" Guid="654cc308-a6f8-4d52-8381-e80c3e9dd078" InformativeScreenshot="207d8b927b86a8cfd16a55e64b15d174.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Verval Yayasan' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+                      </uix:NExtractData.Target>
+                    </uix:NExtractData>
+                    <Assign sap:VirtualizedContainerService.HintSize="635.2,71.2" sap2010:WorkflowViewState.IdRef="Assign_14">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="scg:List(sd:DataRow)">[deleted_kabupaten]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="scg:List(sd:DataRow)">[new List(Of DataRow)]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[kabupaten]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="635.2,982.4" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
+                      <ui:ForEachRow.Body>
+                        <ActivityAction x:TypeArguments="sd:DataRow">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="524.8,855.2" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="x:String" Name="nama_kabupaten" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="nama_kabupaten" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="481.6,197.6" sap2010:WorkflowViewState.IdRef="GetRowItem_5" Row="[row]">
+                              <ui:GetRowItem.Value>
+                                <OutArgument x:TypeArguments="x:String">[nama_kabupaten]</OutArgument>
+                              </ui:GetRowItem.Value>
+                            </ui:GetRowItem>
+                            <If Condition="[Not nama_kabupaten.Equals(last_kabupaten)]" sap:VirtualizedContainerService.HintSize="481.6,524.8" sap2010:WorkflowViewState.IdRef="If_5">
+                              <If.Then>
+                                <Sequence sap:VirtualizedContainerService.HintSize="400,236" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uasa:AppendItemToList x:TypeArguments="sd:DataRow" ItemIndex="{x:Null}" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="356.8,144.8" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_5" ItemToAppend="[row]" List="[deleted_kabupaten]" />
+                                </Sequence>
+                              </If.Then>
+                              <If.Else>
+                                <Sequence sap:VirtualizedContainerService.HintSize="400,123.2" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:Break sap:VirtualizedContainerService.HintSize="356.8,32" sap2010:WorkflowViewState.IdRef="Break_2" />
+                                </Sequence>
+                              </If.Else>
+                            </If>
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:ForEachRow.Body>
+                    </ui:ForEachRow>
+                    <Assign sap:VirtualizedContainerService.HintSize="635.2,71.2" sap2010:WorkflowViewState.IdRef="Assign_16">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[i]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">0</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="635.2,575.2" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
+                      <ui:InterruptibleWhile.Body>
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,398.4" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:RemoveDataRow RowIndex="{x:Null}" DataTable="[kabupaten]" DisplayName="Remove Data Row" sap:VirtualizedContainerService.HintSize="356.8,197.6" sap2010:WorkflowViewState.IdRef="RemoveDataRow_2" Row="[deleted_kabupaten.ElementAt(i)]" />
+                          <Assign sap:VirtualizedContainerService.HintSize="356.8,69.6" sap2010:WorkflowViewState.IdRef="Assign_17">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:Int32">[i]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:Int32">[i+1]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                        </Sequence>
+                      </ui:InterruptibleWhile.Body>
+                      <ui:InterruptibleWhile.Condition>
+                        <VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="i&lt;deleted_kabupaten.Count()" />
+                      </ui:InterruptibleWhile.Condition>
+                    </ui:InterruptibleWhile>
+                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="635.2,98.4" sap2010:WorkflowViewState.IdRef="WriteLine_18" Text="Done Get Last Kabupaten" />
+                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[kabupaten]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="635.2,3681.6" sap2010:WorkflowViewState.IdRef="ForEachRow_6">
+                      <ui:ForEachRow.Body>
+                        <ActivityAction x:TypeArguments="sd:DataRow">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="601.6,3554.4" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="x:String" Name="nama_kabupaten" />
+                              <Variable x:TypeArguments="x:String" Name="url_kabupaten" />
+                              <Variable x:TypeArguments="sd:DataTable" Name="kecamatan" />
+                              <Variable x:TypeArguments="scg:List(sd:DataRow)" Name="deleted_kecamatan" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="nama_kabupaten" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="558.4,197.6" sap2010:WorkflowViewState.IdRef="GetRowItem_6" Row="[row]">
+                              <ui:GetRowItem.Value>
+                                <OutArgument x:TypeArguments="x:String">[nama_kabupaten]</OutArgument>
+                              </ui:GetRowItem.Value>
+                            </ui:GetRowItem>
+                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="url_kabupaten" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="558.4,197.6" sap2010:WorkflowViewState.IdRef="GetRowItem_7" Row="[row]">
+                              <ui:GetRowItem.Value>
+                                <OutArgument x:TypeArguments="x:String">[url_kabupaten]</OutArgument>
+                              </ui:GetRowItem.Value>
+                            </ui:GetRowItem>
+                            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="558.4,92" sap2010:WorkflowViewState.IdRef="NGoToUrl_2" Url="[url_kabupaten]" Version="V3" />
+                            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[kecamatan]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='nama_kecamatan' ReferenceName='Wilayah Jumlah' ReferenceIdx='0'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='url_kecamatan' ReferenceName='Wilayah Jumlah Url' ReferenceIdx='1'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataColumn' IsDeleted='true' Name='Jumlah 510' ReferenceName='Jumlah 510' ReferenceIdx='2'&gt;&#xD;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xD;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xD;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xD;&#xA;&#x9;&lt;/Column&gt;&#xD;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xD;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Wilayah Jumlah' attr='text' name2='Wilayah Jumlah Url' attr2='href' /&gt;&lt;column name='Jumlah 510' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="558.4,167.2" sap2010:WorkflowViewState.IdRef="NExtractData_3" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="234b6ac3-b0b5-42f0-8b8d-d3cb9a62db94" Version="V3">
+                              <uix:NExtractData.NextLink>
+                                <uix:TargetAnchorable BrowserURL="https://vervalyayasan.data.kemdikbud.go.id/index.php/Chome/rekapitulasi?kode_wilayah=280200" DesignTimeRectangle="1569, 843, 71, 45" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Next'" FullSelectorArgument="&lt;webctrl id='tabel_next' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='tabel_next' tag='A' type='' class='paginate_button next' aaname='Next' check:innerText='Next' /&gt;" Guid="aa61eac1-e810-4a5f-aff8-dc1b93163849" ImageBase64="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" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Verval Yayasan' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+                              </uix:NExtractData.NextLink>
+                              <uix:NExtractData.Target>
+                                <uix:TargetAnchorable DesignTimeRectangle="277, 384, 1365, 814" DesignTimeScaleFactor="1.25" FriendlyName="'WilayahJumlah'" FullSelectorArgument="&lt;webctrl id='tabel' tag='TABLE' /&gt;" Guid="99052b4b-463e-49fb-a3a1-109435515498" InformativeScreenshot="37d6de772e9af1dabf50c8cf69f102f0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Verval Yayasan' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+                              </uix:NExtractData.Target>
+                            </uix:NExtractData>
+                            <Assign sap:VirtualizedContainerService.HintSize="558.4,71.2" sap2010:WorkflowViewState.IdRef="Assign_18">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="scg:List(sd:DataRow)">[deleted_kecamatan]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="scg:List(sd:DataRow)">[new List(Of DataRow)]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[kecamatan]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="558.4,2536" sap2010:WorkflowViewState.IdRef="ForEachRow_7">
+                              <ui:ForEachRow.Body>
+                                <ActivityAction x:TypeArguments="sd:DataRow">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="524.8,2408.8" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                    <Sequence.Variables>
+                                      <Variable x:TypeArguments="x:String" Name="nama_kecamatan" />
+                                    </Sequence.Variables>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="nama_kecamatan" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="481.6,197.6" sap2010:WorkflowViewState.IdRef="GetRowItem_8" Row="[row]">
+                                      <ui:GetRowItem.Value>
+                                        <OutArgument x:TypeArguments="x:String">[nama_kecamatan]</OutArgument>
+                                      </ui:GetRowItem.Value>
+                                    </ui:GetRowItem>
+                                    <If Condition="[Not nama_kecamatan.Equals(last_kecamatan)]" sap:VirtualizedContainerService.HintSize="481.6,524.8" sap2010:WorkflowViewState.IdRef="If_7">
+                                      <If.Then>
+                                        <Sequence sap:VirtualizedContainerService.HintSize="400,236" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uasa:AppendItemToList x:TypeArguments="sd:DataRow" ItemIndex="{x:Null}" DisplayName="Append Item to List" sap:VirtualizedContainerService.HintSize="356.8,144.8" sap2010:WorkflowViewState.IdRef="AppendItemToList`1_6" ItemToAppend="[row]" List="[deleted_kecamatan]" />
+                                        </Sequence>
+                                      </If.Then>
+                                      <If.Else>
+                                        <Sequence sap:VirtualizedContainerService.HintSize="400,123.2" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:Break sap:VirtualizedContainerService.HintSize="356.8,32" sap2010:WorkflowViewState.IdRef="Break_3" />
+                                        </Sequence>
+                                      </If.Else>
+                                    </If>
+                                    <Assign sap:VirtualizedContainerService.HintSize="481.6,71.2" sap2010:WorkflowViewState.IdRef="Assign_19">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:Int32">[i]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:Int32">0</InArgument>
+                                      </Assign.Value>
+                                    </Assign>
+                                    <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="481.6,575.2" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_3">
+                                      <ui:InterruptibleWhile.Body>
+                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,398.4" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <ui:RemoveDataRow RowIndex="{x:Null}" DataTable="[kecamatan]" DisplayName="Remove Data Row" sap:VirtualizedContainerService.HintSize="356.8,197.6" sap2010:WorkflowViewState.IdRef="RemoveDataRow_3" Row="[deleted_kecamatan.ElementAt(i)]" />
+                                          <Assign sap:VirtualizedContainerService.HintSize="356.8,69.6" sap2010:WorkflowViewState.IdRef="Assign_20">
+                                            <Assign.To>
+                                              <OutArgument x:TypeArguments="x:Int32">[i]</OutArgument>
+                                            </Assign.To>
+                                            <Assign.Value>
+                                              <InArgument x:TypeArguments="x:Int32">[i+1]</InArgument>
+                                            </Assign.Value>
+                                          </Assign>
+                                        </Sequence>
+                                      </ui:InterruptibleWhile.Body>
+                                      <ui:InterruptibleWhile.Condition>
+                                        <VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="i&lt;deleted_kecamatan.Count" />
+                                      </ui:InterruptibleWhile.Condition>
+                                    </ui:InterruptibleWhile>
+                                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[kecamatan]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="481.6,787.2" sap2010:WorkflowViewState.IdRef="ForEachRow_8">
+                                      <ui:ForEachRow.Body>
+                                        <ActivityAction x:TypeArguments="sd:DataRow">
+                                          <ActivityAction.Argument>
+                                            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                                          </ActivityAction.Argument>
+                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,660" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                            <Sequence.Variables>
+                                              <Variable x:TypeArguments="x:String" Name="nama_kecamatan" />
+                                              <Variable x:TypeArguments="x:String" Name="url_kecamatan" />
+                                            </Sequence.Variables>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="nama_kecamatan" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="356.8,197.6" sap2010:WorkflowViewState.IdRef="GetRowItem_9" Row="[row]">
+                                              <ui:GetRowItem.Value>
+                                                <OutArgument x:TypeArguments="x:String">[nama_kecamatan]</OutArgument>
+                                              </ui:GetRowItem.Value>
+                                            </ui:GetRowItem>
+                                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="url_kecamatan" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="356.8,197.6" sap2010:WorkflowViewState.IdRef="GetRowItem_10" Row="[row]">
+                                              <ui:GetRowItem.Value>
+                                                <OutArgument x:TypeArguments="x:String">[url_kecamatan]</OutArgument>
+                                              </ui:GetRowItem.Value>
+                                            </ui:GetRowItem>
+                                            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="356.8,92" sap2010:WorkflowViewState.IdRef="NGoToUrl_3" Url="[url_kecamatan]" Version="V3" />
+                                          </Sequence>
+                                        </ActivityAction>
+                                      </ui:ForEachRow.Body>
+                                    </ui:ForEachRow>
+                                  </Sequence>
+                                </ActivityAction>
+                              </ui:ForEachRow.Body>
+                            </ui:ForEachRow>
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:ForEachRow.Body>
+                    </ui:ForEachRow>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="f530111b38ced2a4c36ccbec44b751de.jpg" Selector="&lt;html app='chrome.exe' title='Verval Yayasan' /&gt;" Title="Verval Yayasan" Url="[url]" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
