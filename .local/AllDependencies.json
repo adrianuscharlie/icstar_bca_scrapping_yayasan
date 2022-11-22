@@ -20973,15 +20973,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "C:\\Users\\ASUS\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "Scrapping Yayasan",
       "projectName": "Scrapping Yayasan",
-      "projectPath": "D:\\Penting\\ICSTAR DONE\\.local",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\Penting\\ICSTAR DONE\\.local"
+      "projectPath": "D:\\Coding\\ICStar Hackathon\\Scrapping Yayasan\\.local",
+      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+      "outputPath": "D:\\Coding\\ICStar Hackathon\\Scrapping Yayasan\\.local"
     },
     "frameworks": {
       "net6.0-windows7.0": {
@@ -21017,7 +21017,7 @@
             "version": "[1.13.2, 1.13.2]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\User\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\ASUS\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
       }
     },
     "runtimes": {
