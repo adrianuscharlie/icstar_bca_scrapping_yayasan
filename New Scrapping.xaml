@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>994.4000000000001,6944</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>994.4000000000001,6941.6</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="40">
@@ -107,7 +107,7 @@
       <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="1004.8,6879.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="1004.8,6876.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="variable1" />
       <Variable x:TypeArguments="x:String" Default="https://vervalyayasan.data.kemdikbud.go.id/index.php/Chome/rekapitulasi?kode_wilayah=000000" Name="url" />
@@ -117,13 +117,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Verval Yayasan" sap:VirtualizedContainerService.HintSize="961.6,6788" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="9edd0c8e-4811-417b-96eb-e0d06c585e01" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Verval Yayasan" sap:VirtualizedContainerService.HintSize="961.6,6785.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="9edd0c8e-4811-417b-96eb-e0d06c585e01" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="928,6561.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="928,6559.2" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <Sequence.Variables>
               <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
               <Variable x:TypeArguments="sd:DataTable" Name="Provinsi" />
@@ -158,13 +158,13 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NExtractData>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Provinsi]" DisplayName="Start Scrapping Provinsi" sap:VirtualizedContainerService.HintSize="884.8,6255.2" sap2010:WorkflowViewState.IdRef="ForEachRow_6">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Provinsi]" DisplayName="Start Scrapping Provinsi" sap:VirtualizedContainerService.HintSize="884.8,6252.8" sap2010:WorkflowViewState.IdRef="ForEachRow_6">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="851.2,6128" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="851.2,6125.6" sap2010:WorkflowViewState.IdRef="Sequence_11">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="wilayah" />
                       <Variable x:TypeArguments="sd:DataTable" Name="Kabupaten" />
@@ -220,13 +220,13 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NExtractData>
-                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Kabupaten]" DisplayName="Start Scrapping Kabupaten" sap:VirtualizedContainerService.HintSize="808,5504.8" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
+                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Kabupaten]" DisplayName="Start Scrapping Kabupaten" sap:VirtualizedContainerService.HintSize="808,5502.4" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
                       <ui:ForEachRow.Body>
                         <ActivityAction x:TypeArguments="sd:DataRow">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="774.4,5377.6" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="774.4,5375.2" sap2010:WorkflowViewState.IdRef="Sequence_10">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="x:String" Name="nama_kabupaten" />
                               <Variable x:TypeArguments="x:String" Name="url_kabupaten" />
@@ -275,13 +275,13 @@
                                 <uix:TargetAnchorable DesignTimeRectangle="277, 322, 1365, 671" DesignTimeScaleFactor="1.25" FriendlyName="'WilayahJumlah Kec.'" FullSelectorArgument="&lt;webctrl id='tabel' tag='TABLE' /&gt;" Guid="c0dd6a0a-23e2-49fc-bb67-4a3d6cbf9e8d" InformativeScreenshot="15902e2064c7e26d8b8ba0c5f8016844.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Verval Yayasan' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
                               </uix:NExtractData.Target>
                             </uix:NExtractData>
-                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Kecamatan]" DisplayName="Start Scrapping Kecamatan" sap:VirtualizedContainerService.HintSize="731.2,4770.4" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[Kecamatan]" DisplayName="Start Scrapping Kecamatan" sap:VirtualizedContainerService.HintSize="731.2,4768" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
                               <ui:ForEachRow.Body>
                                 <ActivityAction x:TypeArguments="sd:DataRow">
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                                   </ActivityAction.Argument>
-                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="697.6,4643.2" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="678.4,4640.8" sap2010:WorkflowViewState.IdRef="Sequence_9">
                                     <Sequence.Variables>
                                       <Variable x:TypeArguments="x:String" Name="nama_kecamatan" />
                                       <Variable x:TypeArguments="x:String" Name="url_kecamatan" />
@@ -292,7 +292,7 @@
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="nama_kecamatan" DisplayName="Get Nama Kecamatan" sap:VirtualizedContainerService.HintSize="654.4,62.4" sap2010:WorkflowViewState.IdRef="GetRowItem_5" Row="[row]">
+                                    <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="nama_kecamatan" DisplayName="Get Nama Kecamatan" sap:VirtualizedContainerService.HintSize="635.2,62.4" sap2010:WorkflowViewState.IdRef="GetRowItem_5" Row="[row]">
                                       <ui:GetRowItem.Value>
                                         <OutArgument x:TypeArguments="x:String">[nama_kecamatan]</OutArgument>
                                       </ui:GetRowItem.Value>
@@ -303,7 +303,7 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </ui:GetRowItem>
-                                    <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="url_kecamatan" DisplayName="Get URL Kecamatan" sap:VirtualizedContainerService.HintSize="654.4,62.4" sap2010:WorkflowViewState.IdRef="GetRowItem_6" Row="[row]">
+                                    <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="url_kecamatan" DisplayName="Get URL Kecamatan" sap:VirtualizedContainerService.HintSize="635.2,62.4" sap2010:WorkflowViewState.IdRef="GetRowItem_6" Row="[row]">
                                       <ui:GetRowItem.Value>
                                         <OutArgument x:TypeArguments="x:String">[url_kecamatan]</OutArgument>
                                       </ui:GetRowItem.Value>
@@ -314,7 +314,7 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </ui:GetRowItem>
-                                    <uix:NGoToUrl DisplayName="Go To URL Kecamatan" sap:VirtualizedContainerService.HintSize="654.4,62.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_3" Url="[url_kecamatan]" Version="V3">
+                                    <uix:NGoToUrl DisplayName="Go To URL Kecamatan" sap:VirtualizedContainerService.HintSize="635.2,62.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_3" Url="[url_kecamatan]" Version="V3">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -322,7 +322,7 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </uix:NGoToUrl>
-                                    <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[yayasan]" DisplayName="Extract Table Yayasan" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='NPYP' ReferenceIdx='0' Name='NPYP' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='NPYP Url' ReferenceIdx='1' Name='url_yayasan'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Nama' ReferenceIdx='2' Name='nama_yayasan'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Alamat' ReferenceIdx='3' Name='alamat_yayasan'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Desa/Kelurahan' ReferenceIdx='4' Name='desa_yayasan'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='NPYP' attr='text' name2='NPYP Url' attr2='href' /&gt;&lt;column name='Nama' attr='text' /&gt;&lt;column name='Alamat' attr='text' /&gt;&lt;column name='Desa/Kelurahan' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="654.4,167.2" sap2010:WorkflowViewState.IdRef="NExtractData_5" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="9edd0c8e-4811-417b-96eb-e0d06c585e01" Version="V3">
+                                    <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[yayasan]" DisplayName="Extract Table Yayasan" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='NPYP' ReferenceIdx='0' Name='NPYP' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='NPYP Url' ReferenceIdx='1' Name='url_yayasan'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Nama' ReferenceIdx='2' Name='nama_yayasan'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Alamat' ReferenceIdx='3' Name='alamat_yayasan'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Desa/Kelurahan' ReferenceIdx='4' Name='desa_yayasan'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='NPYP' attr='text' name2='NPYP Url' attr2='href' /&gt;&lt;column name='Nama' attr='text' /&gt;&lt;column name='Alamat' attr='text' /&gt;&lt;column name='Desa/Kelurahan' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="635.2,167.2" sap2010:WorkflowViewState.IdRef="NExtractData_5" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="9edd0c8e-4811-417b-96eb-e0d06c585e01" Version="V3">
                                       <uix:NExtractData.NextLink>
                                         <uix:TargetAnchorable BrowserURL="https://vervalyayasan.data.kemdikbud.go.id/index.php/Chome/rekapitulasi?kode_wilayah=060611" DesignTimeRectangle="1569, 843, 71, 45" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Next'" FullSelectorArgument="&lt;webctrl id='tabel_next' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='tabel_next' tag='A' type='' class='paginate_button next disabled' aaname='Next' check:innerText='Next' /&gt;" Guid="527d136b-8268-4e46-97e5-48a33f9aac23" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEsAAAAxCAYAAACS91RNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKwSURBVGhD7ZjBa+JQEIf71wbBS/BS1oM5hAXpoYdQCEJYVmS9eHGh6UGhQkkpeggrwrqweOkhpQgLYQlIQH47SZ7WRtvdKWapMh+8w7yXF8jnzLyHJxD+GZHFQGQxEFkMRBYDkcVAZDEQWQxEFgORxUBkMRBZDEQWA5HFQGQxEFkMRBYDkcVAZDEoTFY4G2I4mmK+VBNrYgQTWpuFKj4cCpPlNzRomgbzKlAzKwK4NVpr+CreA48DnJ+eY/Co4oIoVlZFh16y4EVqMqUAWQ8uDM2A+6DigihWVqOHwZkGvTVVswkvyYox9120LROm5aBzN6eZjPubJpwvHoKNko6/u3A+dfHt5wTDrxZ0TYd54dCcg+64mBIvVpblIZp1UNWq6MzUwk5ZET2vQysbaPapn/XbMCtUwpeqhCMPVklD/XolIXtH8iOE4y6csyqV/KHLqrn0WXEm4myA7BO2ZcV3FrR8uaaS6xio7w6v6+tnolt6vuJgssjW4Nsk69DLMJVF/BqgXtJhjxIbeVkxPCufaQk+bDognLEKk30mZVOjDZuyzrrdMHtUsojg0qBsaGK6zMtSMYnZNexNhz/a1Jto/mNPZani2GRhOUUz6UP9OYY2reVkPT8EdhGlGajXDDphzedijk4WEY1s6LoNO1d20xb1tA8dzLYusE+s9vqLTNpTDySOURa16fQqkZbYZo9KexplzYWH+eq+sAjgj9XuxQQOZeX6NFTPr+P0nkV97CaL49U79sx/lkWkp1xOFhHf92CdljORySiVYbQmpDfG5PN25gVX5sYJqq4eau/fS/ptFCbrrcRRiDCMEL9Ski8R/1Z7Vbxv3p2s94zIYiCyGIgsBiKLgchiILIYiCwGIouByGIgshiILAYii4HIYiCyGIgsBidhmPxhJuO1kQH8AbXrUUZurbBXAAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Verval Yayasan' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
                                       </uix:NExtractData.NextLink>
@@ -336,24 +336,20 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </uix:NExtractData>
-                                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[yayasan]" DisplayName="Start Scrapping Yayasan" sap:VirtualizedContainerService.HintSize="654.4,4036" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+                                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[yayasan]" DisplayName="Start Scrapping Yayasan" sap:VirtualizedContainerService.HintSize="635.2,4033.6" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
                                       <ui:ForEachRow.Body>
                                         <ActivityAction x:TypeArguments="sd:DataRow">
                                           <ActivityAction.Argument>
                                             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                                           </ActivityAction.Argument>
-                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="620.8,3908.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="601.6,3906.4" sap2010:WorkflowViewState.IdRef="Sequence_8">
                                             <Sequence.Variables>
                                               <Variable x:TypeArguments="x:String" Name="nama_yayasan" />
                                               <Variable x:TypeArguments="x:String" Name="url_yayasan" />
                                               <Variable x:TypeArguments="sd:DataTable" Name="data_yayasan" />
                                               <Variable x:TypeArguments="x:String" Name="temp" />
                                               <Variable x:TypeArguments="sd:DataTable" Name="sekolah" />
-                                              <Variable x:TypeArguments="x:String" Name="file_url">
-                                                <Variable.Default>
-                                                  <Literal x:TypeArguments="x:String">D:\Coding\ICStar Hackathon\Scrapping Yayasan\test.txt</Literal>
-                                                </Variable.Default>
-                                              </Variable>
+                                              <Variable x:TypeArguments="x:String" Default="D:\Coding\ICStar Hackathon\Scrapping Yayasan\test.txt" Name="file_url" />
                                               <Variable x:TypeArguments="x:String" Name="alamat_yayasan" />
                                               <Variable x:TypeArguments="x:String" Name="desa_yayasan" />
                                             </Sequence.Variables>
@@ -362,7 +358,7 @@
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="nama_yayasan" DisplayName="Get Nama Yayasan" sap:VirtualizedContainerService.HintSize="577.6,62.4" sap2010:WorkflowViewState.IdRef="GetRowItem_7" Row="[row]">
+                                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="nama_yayasan" DisplayName="Get Nama Yayasan" sap:VirtualizedContainerService.HintSize="558.4,62.4" sap2010:WorkflowViewState.IdRef="GetRowItem_7" Row="[row]">
                                               <ui:GetRowItem.Value>
                                                 <OutArgument x:TypeArguments="x:String">[nama_yayasan]</OutArgument>
                                               </ui:GetRowItem.Value>
@@ -373,7 +369,7 @@
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
                                             </ui:GetRowItem>
-                                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="url_yayasan" DisplayName="Get URL Yayasan" sap:VirtualizedContainerService.HintSize="578,62" sap2010:WorkflowViewState.IdRef="GetRowItem_8" Row="[row]">
+                                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="url_yayasan" DisplayName="Get URL Yayasan" sap:VirtualizedContainerService.HintSize="558.4,62.4" sap2010:WorkflowViewState.IdRef="GetRowItem_8" Row="[row]">
                                               <ui:GetRowItem.Value>
                                                 <OutArgument x:TypeArguments="x:String">[url_yayasan]</OutArgument>
                                               </ui:GetRowItem.Value>
@@ -384,7 +380,7 @@
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
                                             </ui:GetRowItem>
-                                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="alamat_yayasan" DisplayName="Get  Alamat Yayasan" sap:VirtualizedContainerService.HintSize="578,62" sap2010:WorkflowViewState.IdRef="GetRowItem_13" Row="[row]">
+                                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="alamat_yayasan" DisplayName="Get  Alamat Yayasan" sap:VirtualizedContainerService.HintSize="558.4,62.4" sap2010:WorkflowViewState.IdRef="GetRowItem_13" Row="[row]">
                                               <ui:GetRowItem.Value>
                                                 <OutArgument x:TypeArguments="x:String">[alamat_yayasan]</OutArgument>
                                               </ui:GetRowItem.Value>
@@ -395,12 +391,12 @@
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
                                             </ui:GetRowItem>
-                                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="desa_yayasan" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="578,198" sap2010:WorkflowViewState.IdRef="GetRowItem_14" Row="[row]">
+                                            <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="desa_yayasan" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="558.4,197.6" sap2010:WorkflowViewState.IdRef="GetRowItem_14" Row="[row]">
                                               <ui:GetRowItem.Value>
                                                 <OutArgument x:TypeArguments="x:String">[desa_yayasan]</OutArgument>
                                               </ui:GetRowItem.Value>
                                             </ui:GetRowItem>
-                                            <uix:NGoToUrl DisplayName="Go To URL Yayasan" sap:VirtualizedContainerService.HintSize="578,92" sap2010:WorkflowViewState.IdRef="NGoToUrl_4" Url="[url_yayasan]" Version="V3">
+                                            <uix:NGoToUrl DisplayName="Go To URL Yayasan" sap:VirtualizedContainerService.HintSize="558.4,92" sap2010:WorkflowViewState.IdRef="NGoToUrl_4" Url="[url_yayasan]" Version="V3">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -408,7 +404,7 @@
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
                                             </uix:NGoToUrl>
-                                            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[data_yayasan]" DisplayName="Extract Table Data Yayasan" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='data_yayasan'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='li' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="578,167" sap2010:WorkflowViewState.IdRef="NExtractData_6" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="9edd0c8e-4811-417b-96eb-e0d06c585e01" Version="V3">
+                                            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[data_yayasan]" DisplayName="Extract Table Data Yayasan" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='data_yayasan'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='li' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="558.4,167.2" sap2010:WorkflowViewState.IdRef="NExtractData_6" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="9edd0c8e-4811-417b-96eb-e0d06c585e01" Version="V3">
                                               <uix:NExtractData.Target>
                                                 <uix:TargetAnchorable DesignTimeRectangle="1223, 405, 404, 643" DesignTimeScaleFactor="1.25" ElementType="List" FriendlyName="'UL'" FullSelectorArgument="&lt;webctrl tag='UL' /&gt;" Guid="6c70d889-0509-4737-bc06-07063a5cbc39" InformativeScreenshot="856dae8f4ce78ec68a5d13cebb4c8b5e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Verval Yayasan' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
                                               </uix:NExtractData.Target>
@@ -419,7 +415,7 @@
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
                                             </uix:NExtractData>
-                                            <Assign DisplayName="Create String Data Yayasan" sap:VirtualizedContainerService.HintSize="578,71" sap2010:WorkflowViewState.IdRef="Assign_2">
+                                            <Assign DisplayName="Create String Data Yayasan" sap:VirtualizedContainerService.HintSize="558.4,71.2" sap2010:WorkflowViewState.IdRef="Assign_2">
                                               <Assign.To>
                                                 <OutArgument x:TypeArguments="x:String">[temp]</OutArgument>
                                               </Assign.To>
@@ -429,7 +425,7 @@
                                                 </InArgument>
                                               </Assign.Value>
                                             </Assign>
-                                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[data_yayasan]" DisplayName="Start Scrapping Data Yayasan" sap:VirtualizedContainerService.HintSize="577.6,751.2" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[data_yayasan]" DisplayName="Start Scrapping Data Yayasan" sap:VirtualizedContainerService.HintSize="558.4,751.2" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                                               <ui:ForEachRow.Body>
                                                 <ActivityAction x:TypeArguments="sd:DataRow">
                                                   <ActivityAction.Argument>
@@ -491,7 +487,7 @@
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
                                             </ui:ForEachRow>
-                                            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[sekolah]" DisplayName="Extract Table Sekolah" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='NPSN' ReferenceName='NPSN' ReferenceIdx='0'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' IsDeleted='true' Name='NPSN Url' ReferenceName='NPSN Url' ReferenceIdx='1'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Nama' ReferenceName='Nama' ReferenceIdx='2'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Jenjang' ReferenceName='Jenjang' ReferenceIdx='3'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Kecamatan' ReferenceName='Kecamatan' ReferenceIdx='4'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Kabupaten' ReferenceName='Kabupaten' ReferenceIdx='5'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Provinsi' ReferenceName='Provinsi' ReferenceIdx='6'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='NPSN' attr='text' name2='NPSN Url' attr2='href' /&gt;&lt;column name='Nama' attr='text' /&gt;&lt;column name='Jenjang' attr='text' /&gt;&lt;column name='Kecamatan' attr='text' /&gt;&lt;column name='Kabupaten' attr='text' /&gt;&lt;column name='Provinsi' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="577.6,167.2" sap2010:WorkflowViewState.IdRef="NExtractData_7" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="9edd0c8e-4811-417b-96eb-e0d06c585e01" Version="V3">
+                                            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[sekolah]" DisplayName="Extract Table Sekolah" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='NPSN' ReferenceName='NPSN' ReferenceIdx='0'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' IsDeleted='true' Name='NPSN Url' ReferenceName='NPSN Url' ReferenceIdx='1'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Nama' ReferenceName='Nama' ReferenceIdx='2'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Jenjang' ReferenceName='Jenjang' ReferenceIdx='3'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Kecamatan' ReferenceName='Kecamatan' ReferenceIdx='4'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Kabupaten' ReferenceName='Kabupaten' ReferenceIdx='5'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='Provinsi' ReferenceName='Provinsi' ReferenceIdx='6'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='NPSN' attr='text' name2='NPSN Url' attr2='href' /&gt;&lt;column name='Nama' attr='text' /&gt;&lt;column name='Jenjang' attr='text' /&gt;&lt;column name='Kecamatan' attr='text' /&gt;&lt;column name='Kabupaten' attr='text' /&gt;&lt;column name='Provinsi' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="558.4,167.2" sap2010:WorkflowViewState.IdRef="NExtractData_7" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="9edd0c8e-4811-417b-96eb-e0d06c585e01" Version="V3">
                                               <uix:NExtractData.NextLink>
                                                 <uix:TargetAnchorable BrowserURL="https://vervalyayasan.data.kemdikbud.go.id/index.php/Chome/profil?yayasan_id=5D1D3132-9F0C-40C3-916F-0928E6F917EA" DesignTimeRectangle="1569, 864, 71, 45" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Next'" FullSelectorArgument="&lt;webctrl id='tabelsekolah_next' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl id='tabelsekolah_next' tag='A' type='' class='paginate_button next disabled' aaname='Next' check:innerText='Next' /&gt;" Guid="b340c7ae-c0be-4ea5-91d2-bf04a46a9e77" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEsAAAAxCAYAAACS91RNAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAPRSURBVGhD7dbtT1JhGAbw/rr+kODg3FToQ9qbOV3ZWnNKJGsy7cXl7BPRqKUVS2XOylJW2YtOSF5FeYcDiHL1nCPQ4UjFsxOt3H1t1wfOBwa/3c/9nBOo5OT1VTgcDmxsbMDr9cLn88Hv9yMQCCAcDiMSiSAajWJnZwexWAzxeByJRALJZBLpdFpuNpuVm8vl5ObzebmFQqHWYrFY697eXl1LpVJd9/f363pwcNCw5XK56WoJYXGEsDhCWBwhLI4QFkcIiyOExRHC4ghhcYSwOEJYHCEsjhAWRxpibW5uylhbW1sIBoOasZoFIyzCIizC+k0IiyMtw4p8mMOCexWBnBorg2/v3HB/3iGsKtai5RR0Oh36HnpVWD44LuihH33157AiLgz1DMEVaQykrJa0FqurAx0C+xOxFmOFnOgz9MEZagykrJa0FuumEzODOnRMrDaBlUP4zSNMjvSjf2QM0+4w8hUk78vbGJucR6D0A6jwwQnbuB3vvniw9NAMk8GEAYuNPbPBvppsCCVVS1qLNeRCbG0K3bpuTH36FVYSr61d0Lf3YuLpIhafTqLfpEf/I//hVKXnMdIm4OqLRAUrAGevAOO9j0is2GG7dh6G/x7rvB3efBpLNzugG5xF9CdYuYVh6A3DmEspjuHXaZwTBvEifjhd8eeDENrMmM8cILNghnDaBo9YOYZvrQzrfz+GMha7DcMzuCx0wuKON8DK4eUw+2x9XbevSqU3GBUEjK1Ud5YfzgE2Tbfuw3pagHkhUzuSxwuL1We/CJ1xnE2DGusbHBfZZ/3RCgxrdLmKxRb82n0Y2TPh8gwSFah/DisUCslY29vbTWFJlbBOKbAKogfjRvYq8SQIt4VhqLC67rxXTZb6Nkxj3swmq/cSjG0DcAaPMxbbV3G3BZ2dFlikY6fYWe/vsOXeM42vxZ9jpZdGYTRasSxmZDThmqs2XccSq1CIYpa9SsjHTIG1t/0MVwxsum7MISxWsLJbWF6p3IY5D8bYnqrdhrsuXFXcjofvWQaY5w5vwWKxMZRULfnLWKyfptCjxpJuxM0nGDnT/mNnGdpx6a4H8f08PBNGCGcfYF3xnhV4PFC7HcvlLN7eMrHpMsg13Vs7glStlrQMS1ryoijKUHVYrBJStVUsqdJEiakY+/4URHYklcdQahVK3SpEMZ1kvyeLogJHXS3557CU5cVqplpCWBwhLI4QFkcIiyOExRHC4ghhcYSwOHIEa319/bdYu7u7MpZUCSuVSslYmUympVh/AkxLCIsjhMURwuIIYXGEsDhCWBwhrKYDfAe3Mc6CVYi1YgAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Verval Yayasan' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
                                               </uix:NExtractData.NextLink>
@@ -499,7 +495,7 @@
                                                 <uix:TargetAnchorable DesignTimeRectangle="277, 759, 1365, 101" DesignTimeScaleFactor="1.25" FriendlyName="'NPSNNamaJenjangKecamata…'" FullSelectorArgument="&lt;webctrl id='tabelsekolah' tag='TABLE' /&gt;" Guid="94624e4f-1beb-452a-a375-b8fdd640310b" InformativeScreenshot="66940554c9c2d3d373eba2c997c31e1f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Verval Yayasan' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
                                               </uix:NExtractData.Target>
                                             </uix:NExtractData>
-                                            <If Condition="[sekolah.ColumnCount&lt;2]" sap:VirtualizedContainerService.HintSize="577.6,1637.6" sap2010:WorkflowViewState.IdRef="If_1">
+                                            <If Condition="[sekolah.ColumnCount&lt;2]" sap:VirtualizedContainerService.HintSize="558.4,1636" sap2010:WorkflowViewState.IdRef="If_1">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -535,19 +531,19 @@
                                                 </Sequence>
                                               </If.Then>
                                               <If.Else>
-                                                <Sequence sap:VirtualizedContainerService.HintSize="476.8,1201.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                                <Sequence sap:VirtualizedContainerService.HintSize="476.8,1200" sap2010:WorkflowViewState.IdRef="Sequence_7">
                                                   <sap:WorkflowViewStateService.ViewState>
                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                     </scg:Dictionary>
                                                   </sap:WorkflowViewStateService.ViewState>
-                                                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[sekolah]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="433.6,1110.4" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                                                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[sekolah]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="433.6,1108.8" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
                                                     <ui:ForEachRow.Body>
                                                       <ActivityAction x:TypeArguments="sd:DataRow">
                                                         <ActivityAction.Argument>
                                                           <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                                                         </ActivityAction.Argument>
-                                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,984.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="400,983.2" sap2010:WorkflowViewState.IdRef="Sequence_6">
                                                           <Sequence.Variables>
                                                             <Variable x:TypeArguments="x:String" Name="npsn" />
                                                             <Variable x:TypeArguments="x:String" Name="nama_sekolah" />
@@ -560,12 +556,12 @@
                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
-                                                          <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="NPSN" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="338,198" sap2010:WorkflowViewState.IdRef="GetRowItem_10" Row="[row]">
+                                                          <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="NPSN" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="356.8,197.6" sap2010:WorkflowViewState.IdRef="GetRowItem_10" Row="[row]">
                                                             <ui:GetRowItem.Value>
                                                               <OutArgument x:TypeArguments="x:String">[npsn]</OutArgument>
                                                             </ui:GetRowItem.Value>
                                                           </ui:GetRowItem>
-                                                          <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Nama" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="338,198" sap2010:WorkflowViewState.IdRef="GetRowItem_11" Row="[row]">
+                                                          <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Nama" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="356.8,197.6" sap2010:WorkflowViewState.IdRef="GetRowItem_11" Row="[row]">
                                                             <ui:GetRowItem.Value>
                                                               <OutArgument x:TypeArguments="x:String">[nama_sekolah]</OutArgument>
                                                             </ui:GetRowItem.Value>
@@ -604,7 +600,7 @@
                                                 </Sequence>
                                               </If.Else>
                                             </If>
-                                            <ui:WriteTextFile File="{x:Null}" DisplayName="Write Data Per Line" FileName="[file_url]" sap:VirtualizedContainerService.HintSize="577.6,144" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[data]">
+                                            <ui:WriteTextFile File="{x:Null}" DisplayName="Write Data Per Line" FileName="[file_url]" sap:VirtualizedContainerService.HintSize="558.4,144" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[data]">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -642,7 +638,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:ForEachRow>
-                    <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" Result="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" Body="[&quot;{'Text' : '&quot;+&quot;Robot Selesai Melakukan Scraping pada Provinsi : &quot; + nama_provinsi +&quot;'}&quot;]" BodyFormat="application/json" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="https://binusianorg.webhook.office.com/webhookb2/d539b662-b1a2-4c12-baf3-05311ece8510@3485b963-82ba-4a6f-810f-b5cc226ff898/IncomingWebhook/4f8f9ac7952341b89db268a90ef85ee2/ac5febb7-b89c-454d-8dbd-38b1e17bd08d" sap:VirtualizedContainerService.HintSize="808,80.8" sap2010:WorkflowViewState.IdRef="HttpClient_2" Method="POST" TimeoutMS="6000">
+                    <ui:HttpClient ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" Result="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" Body="[&quot;{'Text' : '&quot;+&quot;Robot Selesai Melakukan Scraping pada Provinsi : &quot; + nama_provinsi +&quot;'}&quot;]" BodyFormat="application/json" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="https://binusianorg.webhook.office.com/webhookb2/d539b662-b1a2-4c12-baf3-05311ece8510@3485b963-82ba-4a6f-810f-b5cc226ff898/IncomingWebhook/4f8f9ac7952341b89db268a90ef85ee2/ac5febb7-b89c-454d-8dbd-38b1e17bd08d" sap:VirtualizedContainerService.HintSize="204,80.8" sap2010:WorkflowViewState.IdRef="HttpClient_2" Method="POST" TimeoutMS="6000">
                       <ui:HttpClient.Attachments>
                         <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                       </ui:HttpClient.Attachments>
