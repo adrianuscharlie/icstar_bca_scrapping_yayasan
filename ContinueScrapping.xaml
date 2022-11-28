@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="ContinueScrapping" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1023.2,16196.8" sap2010:WorkflowViewState.IdRef="ContinueScrapping_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uasa="clr-namespace:UiPath.Activities.System.Arrays;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="ContinueScrapping" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1424,16229" sap2010:WorkflowViewState.IdRef="ContinueScrapping_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uasa="clr-namespace:UiPath.Activities.System.Arrays;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="47">
       <x:String>System.Activities</x:String>
@@ -121,9 +121,13 @@
       <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ContinueScrapping" sap:VirtualizedContainerService.HintSize="1033.6,16132" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ContinueScrapping" sap:VirtualizedContainerService.HintSize="1052,16164" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Default="D:\Coding\ICStar Hackathon\Scrapping Yayasan\test.txt" Name="file_url" />
+      <Variable x:TypeArguments="x:String" Name="file_url">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">C:\Users\User\Desktop\New Text Document.txt</Literal>
+        </Variable.Default>
+      </Variable>
       <Variable x:TypeArguments="x:String" Name="text" />
       <Variable x:TypeArguments="x:String" Name="last_line" />
       <Variable x:TypeArguments="x:String" Default="https://vervalyayasan.data.kemdikbud.go.id/index.php/Chome/rekapitulasi?kode_wilayah=000000" Name="url" />
@@ -143,7 +147,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ReadTextFile File="{x:Null}" Content="[data]" DisplayName="Read Text File" FileName="[file_url]" sap:VirtualizedContainerService.HintSize="990.4,90.4" sap2010:WorkflowViewState.IdRef="ReadTextFile_4">
+    <ui:ReadTextFile File="{x:Null}" Content="[data]" DisplayName="Read Text File" FileName="[file_url]" sap:VirtualizedContainerService.HintSize="990,89" sap2010:WorkflowViewState.IdRef="ReadTextFile_4">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -151,7 +155,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ReadTextFile>
-    <Assign DisplayName="Read All String in Text" sap:VirtualizedContainerService.HintSize="990.4,69.6" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign DisplayName="Read All String in Text" sap:VirtualizedContainerService.HintSize="990,70" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[last_line]</OutArgument>
       </Assign.To>
@@ -159,7 +163,7 @@
         <InArgument x:TypeArguments="x:String">[File.ReadAllLines(file_url).Last()]</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign sap:VirtualizedContainerService.HintSize="990.4,69.6" sap2010:WorkflowViewState.IdRef="Assign_82">
+    <Assign sap:VirtualizedContainerService.HintSize="990,70" sap2010:WorkflowViewState.IdRef="Assign_82">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[data]</OutArgument>
       </Assign.To>
@@ -167,7 +171,7 @@
         <InArgument x:TypeArguments="x:String">[String.Join(Environment.NewLine, data.Split({Environment.NewLine}, StringSplitOptions.None).Skip(1).Reverse.Skip(1).Reverse)]</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign sap:VirtualizedContainerService.HintSize="990.4,69.6" sap2010:WorkflowViewState.IdRef="Assign_83">
+    <Assign sap:VirtualizedContainerService.HintSize="990,70" sap2010:WorkflowViewState.IdRef="Assign_83">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[data]</OutArgument>
       </Assign.To>
@@ -175,7 +179,7 @@
         <InArgument x:TypeArguments="x:String">[data+Environment.NewLine]</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign DisplayName="Split Last Line" sap:VirtualizedContainerService.HintSize="990.4,69.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+    <Assign DisplayName="Split Last Line" sap:VirtualizedContainerService.HintSize="990,70" sap2010:WorkflowViewState.IdRef="Assign_2">
       <Assign.To>
         <OutArgument x:TypeArguments="s:String[]">[split_string]</OutArgument>
       </Assign.To>
@@ -183,7 +187,7 @@
         <InArgument x:TypeArguments="s:String[]">[last_line.Split("~|~")]</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign DisplayName="Get Last Provinsi" sap:VirtualizedContainerService.HintSize="990.4,69.6" sap2010:WorkflowViewState.IdRef="Assign_4">
+    <Assign DisplayName="Get Last Provinsi" sap:VirtualizedContainerService.HintSize="990,70" sap2010:WorkflowViewState.IdRef="Assign_4">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[last_provinsi]</OutArgument>
       </Assign.To>
@@ -191,7 +195,7 @@
         <InArgument x:TypeArguments="x:String">[split_string(0)]</InArgument>
       </Assign.Value>
     </Assign>
-    <Assign DisplayName="Get Last Kabupaten" sap:VirtualizedContainerService.HintSize="990.4,69.6" sap2010:WorkflowViewState.IdRef="Assign_5">
+    <Assign DisplayName="Get Last Kabupaten" sap:VirtualizedContainerService.HintSize="990,70" sap2010:WorkflowViewState.IdRef="Assign_5">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[last_kabupaten]</OutArgument>
       </Assign.To>
