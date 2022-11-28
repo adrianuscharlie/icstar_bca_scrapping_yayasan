@@ -1,0 +1,19 @@
+0. provinsi
+1. kabupaten
+2. kecamatan
+3. yayasan
+4. alamat
+5. nama desa
+6. Pimpinan yayasan
+7. operator yayasan
+8. telp yayasan
+9. fax yayasan
+10. email yayasan
+11. kode pos yayasan
+12. no pendirian yayasan
+13. tgl pendirian yayasan
+14. no pengesahan PN LN
+15. no sk pengesahan badan hukum
+16. tgl sk pengesahan badan hukum
+17. npsn
+18. nama sekolah
