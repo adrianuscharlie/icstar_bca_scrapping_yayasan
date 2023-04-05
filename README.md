@@ -5,10 +5,10 @@ Global Exception Handler. For more detail, access [THIS](https://docs.google.com
 
 ## Table Of Contents
 - About The Project
-- Screenshot
+- Demo
 - Technologies
 
-## Screenshot
+## Demo
 For the demo, you can access the video through [THIS](https://youtu.be/5PLzMU6Z2ZU) link.
 
 ## Technologies
